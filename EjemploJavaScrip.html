@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo1</title>
+    <script type="text/JavaScript">
+        var dato='Bienvenido';
+        function prueba(arg1,arg2) {
+            alert(arg1+''+arg2);
+            funcion2 ()
+        }
+
+        function funcion2(val) {
+            var dato='Bienvenido';
+            alert(dato);
+        }
+        function capturar(){
+            var dato1,dato2,resultado;
+            dato1=document.getElementById('valor1').value;
+            dato2=document.getElementById('valor2').value;
+            resultado=dato1*dato2;
+            document.getElementById('resultado').value=resultado;
+        }
+    </script>
+</head>
+<body>
+    <p onclick="prueba('Intro JavaScript',555)">click aqui</p>
+    Valor
+    <input type="text" id="valor1">
+    <br><br>
+    Cantidad
+    <input type="text" id="valor2">
+    <br><br>
+    Resultado
+    <input type="text" id="resultado">
+    <br><br>
+    <input type="button" value="Enviar" onclick="capturar()" >
+
+</body>
+</html>
